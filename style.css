@@ -18,6 +18,8 @@
         border-top: 2px solid white;
         border-left: 2px solid white;
         transition-duration: 1s;
+        margin-right: 10px;
+        margin-left: 10px;
         transition-property: border-top,
             border-left,
             border-bottom,
