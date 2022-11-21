@@ -7,21 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
-    <h1>LIST</h1>
+    <header>
+        <h1>TO-DO PINK LIST</h1>
+    </header>
     <br>
-    <form id="note-form">
-        <input type="text" id="input-note" placeholder="Add">
-        <button id="submitButton">Send</button>
-    </form>
-    <ul id="notes"></ul>
-    
+    <main>
+        <form id="note-form">
+            <input type="text" id="input-note" placeholder="Add">
+            <button id="submitButton">Send</button>
+            <button id="submitButton2">Delete All</button>
+        </form>
+        <ul id="notes"></ul>
+    </main>
 
 
     <script src="./main.js"></script>
