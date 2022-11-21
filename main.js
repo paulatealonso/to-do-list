@@ -33,21 +33,9 @@ const removeNote = (button) => {
 }
 
 
- // TAMPOCO PERO ESTA BETTER//
- 
-removeAll.onclick = () => {
-    let lis = notes.getElementsByTagName("li");
-    while(lis.length > 0){                   
-       notes.removeChild(lis[0]);
-    }
+ removeAll.onclick = (e) => {    
+    e.preventDefault()        
     notesStorage = []
     localStorage.setItem("notesStr", JSON.stringify(notesStorage))
+    notes.innerHTML = " "
  };  
- 
-
-
- /*removeAll.onclick = () => {            
-    notesStorage = []
-    localStorage.setItem("notesStr", JSON.stringify(notesStorage))
-    notes.remove()
- };   NO SALE */ 
